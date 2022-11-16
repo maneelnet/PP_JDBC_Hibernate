@@ -7,22 +7,24 @@ public class Main {
         UserServiceImpl userService = new UserServiceImpl();
 
         //create table
-        userService.createUsersTable();
+        //userService.createUsersTable();
 
         //create table rows
-        userService.saveUser("Nikolay", "Kozlov", (byte) 14);
-        userService.saveUser("Alexey", "Baranin", (byte) 21);
-        userService.saveUser("Evgeni", "Chaykovsky", (byte) 33);
-        userService.saveUser("Volya", "Medvedev", (byte) 62);
+        //userService.saveUser("Nikolay", "Kozlov", (byte) 14);
+        //userService.saveUser("Alexey", "Baranin", (byte) 21);
+        //userService.saveUser("Evgeni", "Chaykovsky", (byte) 33);
+        //userService.saveUser("Volya", "Medvedev", (byte) 62);
 
-        //get all users
-        System.out.println(userService.getAllUsers());
-
-        //clear table
+//        userService.removeUserById(1);
+//
+//        //get all users
+        //System.out.println(userService.getAllUsers());
+//
+//        //clear table
         userService.cleanUsersTable();
-
-        //delete table
-        userService.dropUsersTable();
+//
+//        //delete table
+//        userService.dropUsersTable();
 
     }
 }
