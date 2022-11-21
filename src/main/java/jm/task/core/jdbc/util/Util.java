@@ -10,6 +10,10 @@ public class Util {
     static final String PASSWORD = "12345";
     static final String CLASS_DRIVER = "com.mysql.cj.jdbc.Driver";
 
+    private Util() {
+
+    }
+
     public static Connection getConnection() {
         Connection connection = null;
         try {
